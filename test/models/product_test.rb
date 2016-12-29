@@ -67,4 +67,26 @@ class ProductTest < ActiveSupport::TestCase
 
   end
 
+  test "title must be more than 10 letters - i18n" do
+    product = Product.new(title: "Short",
+                           description:"A Full Description",
+                           price: 9.95,
+                           image_url: "bookbook.png")
+
+    assert product.invalid?
+    assert_equal ["is too short (minimum is 10 characters)"], product.errors[:title]
+
+  end
+
+  test "description must be more than 10 letters - i18n" do
+    product = Product.new(title: "Another Long Title",
+                           description:"Short",
+                           price: 9.95,
+                           image_url: "bookbook.png")
+
+    assert product.invalid?
+    assert_equal ["is too short (minimum is 10 characters)"], product.errors[:description]
+
+  end
+
 end

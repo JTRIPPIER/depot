@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 valid_book:
-  title: "Book One"
-  description: A good read
+  title: "Book One: Great Adventures"
+  description: A very good read
   image_url: book1.png
   price: 9.99
 
 two:
-  title: MyString
-  description: MyText
+  title: The Title of the Item
+  description: My Item Description
   image_url: MyString
   price: 9.99
