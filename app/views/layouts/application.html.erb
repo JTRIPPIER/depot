@@ -6,9 +6,28 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= csrf_meta_tags %>
   </head>
 
   <body class="<%= controller.controller_name %>">
-    <%= yield %>
+    <div id="banner">
+      <%= image_tag 'logo.svg', alt: 'The pragmatic Bookshelf' %>
+      <span class="title"> <%= @page_title %> </span>
+    </div>
+
+    <div id="columns">
+      <div id="side">
+        <ul>
+          <li><a href="/">Catalog</a></li>
+          <li><a href="/products">Products</a></li>
+        </ul>
+      </div>
+
+      <div id="main">
+        <%= yield %>
+      </div>
+    </div>
+
+
   </body>
 </html>
