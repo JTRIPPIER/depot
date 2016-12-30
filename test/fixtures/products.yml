@@ -6,6 +6,12 @@ valid_book:
   image_url: book1.png
   price: 9.99
 
+one:
+  title: The Title of the Item 2
+  description: My Item Description 2
+  image_url: MyString
+  price: 9.99
+
 two:
   title: The Title of the Item
   description: My Item Description
