@@ -7,6 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 products = Product.create([
-  {title: 'Milwaukee Drill Set', description: 'A set of two drills. Ideal for any DIY project', image_url:'assets/images/MilwaukeeDrillSet.jpeg', price:295.00},
-  {title: 'Bosch laser level', description: 'Make sure everything is level', image_url:'assets/images/BoschLaserLevel.jpeg', price:35.00}
+  {title: 'Milwaukee Drill Set', description: 'A set of two drills. Ideal for any DIY project', image_url:'MilwaukeeDrillSet.jpeg', price:295.00},
+  {title: 'Bosch laser level', description: 'Make sure everything is level', image_url:'BoschLaserLevel.jpeg', price:35.00}
 ])
